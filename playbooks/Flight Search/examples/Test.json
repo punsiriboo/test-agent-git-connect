@@ -1,0 +1,110 @@
+{
+  "name": "e241997a-0421-40ce-b334-1f364e198a41",
+  "actions": [ {
+    "userUtterance": {
+      "text": "สวัสดีค่ะ"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "I'm sorry, I don't understand. I can only speak English. Is there anything else I can help you with?"
+    }
+  }, {
+    "userUtterance": {
+      "text": " i want to go to Japan"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Okay, I can help you with that!  Which city in Japan are you interested in flying to?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "hokkaido"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Okay, great!  And what city are you departing from?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Thailand"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Okay, and what city in Thailand will you be departing from?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Bangkok"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Perfect! And what date are you looking to travel?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "may be in Friday this week"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Okay, so you're looking to travel on Friday of this week. Can you please tell me the exact date you'd like to travel?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Friday this week"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "I understand you're looking to travel this Friday. Could you please provide the exact date?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "20/2/3025"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "I'm sorry, that date seems a bit far in the future.  Could you please confirm the date?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "20/2/3025"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "I'm sorry, but I can only book flights up to 1 year in advance. Would you like to book a flight for a date within the next year?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "20/2/2025"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Okay, so you are looking to travel on February 20th, 2025. Is that correct?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "yes"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Sorry something went wrong, can you repeat?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "correct"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Sorry something went wrong, can you repeat?"
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "Sorry something went wrong",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Test",
+  "tokenCount": 590,
+  "conversationState": "OUTPUT_STATE_FAILED",
+  "languageCode": "en"
+}

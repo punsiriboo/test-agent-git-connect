@@ -1,0 +1,100 @@
+{
+  "name": "d62b4688-9d5a-4bf9-bc65-486092f827a0",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Hi"
+    }
+  }, {
+    "toolUse": {
+      "tool": "getGeolocation",
+      "action": "getGeolocation",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+        "functionParameter": {
+          "address": {
+            "ISO3166-2-lvl4": "US-CA",
+            "country": "United States",
+            "country_code": "us",
+            "county": "Contra Costa County",
+            "postcode": "94563",
+            "road": "Meadowview Road",
+            "state": "California",
+            "town": "Orinda"
+          },
+          "currentDate": "9/26/2024"
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Hi there, welcome to the Cymbal Air helpdesk! I can help you find a flight to anywhere in the world. Where would you like to go?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "I want to fly to China day after tomorrow"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Which city in China would you like to fly to?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "What are my options?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "We fly to many cities in China, including Beijing, Shanghai, and Guangzhou. Which city would you like to fly to?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Shanghai"
+    }
+  }, {
+    "toolUse": {
+      "tool": "getFlights",
+      "action": "getFlights",
+      "inputActionParameters": {
+        "functionParameter": {
+          "destination_airport_code": "PVG",
+          "destination_city_name": "Shanghai",
+          "flight_duration_minutes": 660,
+          "origin_airport_code": "OAK",
+          "origin_city_name": "Orinda",
+          "timezone_difference_minutes": 600,
+          "travel_date": "2024-09-28"
+        }
+      },
+      "outputActionParameters": {
+        "functionParameter": {
+          "flights": [ "Flight CY838 leaves OAK at 13:57, arrives to PVG at 10:57 current day + 1 with 0 stops costing 1303 dollars. ", "Flight CY279 leaves OAK at 07:05, arrives to PVG at 04:05 current day + 1 with 0 stops costing 352 dollars. This is the cheapest option!", "Flight CY856 leaves OAK at 16:35, arrives to PVG at 13:35 current day + 1 with 0 stops costing 782 dollars. ", "Flight CY699 leaves OAK at 14:25, arrives to PVG at 11:25 current day + 1 with 0 stops costing 1219 dollars. ", "Flight CY889 leaves OAK at 15:10, arrives to PVG at 14:56 current day + 1 with 2 stops costing 846 dollars. " ]
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Which of these flights would you like to book? Your cheapest option is a flight that leaves OAK at 7:05 am in the morning on September 28th, arrives in PVG at 4:05 am in the morning the following day, and costs $352."
+    }
+  }, {
+    "userUtterance": {
+      "text": "the one that leaves at 7:05"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Excellent, your flight has been booked. Your flight departs from OAK at 7:05 AM and arrives in PVG the following day at 4:05 AM. Your booking number is 9S55TR, you will receive an email with more details shortly. Is there anything else I can help you with?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "no"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Glad I could help!"
+    }
+  } ],
+  "displayName": "Book a flight to country - geolocation available 2",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_PENDING",
+  "languageCode": "en"
+}

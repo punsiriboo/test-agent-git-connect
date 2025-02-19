@@ -1,0 +1,45 @@
+{
+  "name": "e85ff4ee-b135-47d8-b969-a59b87a3e429",
+  "displayName": "getFlights",
+  "toolType": "CUSTOMIZED_TOOL",
+  "functionSpec": {
+    "inputSchema": {
+      "properties": {
+        "destination_airport_code": {
+          "type": "string"
+        },
+        "destination_city_name": {
+          "type": "string"
+        },
+        "flight_duration_minutes": {
+          "type": "number"
+        },
+        "origin_airport_code": {
+          "type": "string"
+        },
+        "origin_city_name": {
+          "type": "string"
+        },
+        "timezone_difference_minutes": {
+          "type": "number"
+        },
+        "travel_date": {
+          "type": "string"
+        }
+      },
+      "required": [ "origin_city_name", "origin_airport_code", "destination_airport_code", "destination_city_name", "travel_date", "flight_duration_minutes", "timezone_difference_minutes" ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "flights": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    }
+  }
+}

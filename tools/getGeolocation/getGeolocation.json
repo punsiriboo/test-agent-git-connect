@@ -1,0 +1,36 @@
+{
+  "name": "4f58a625-5ea6-4bf6-a1c1-cf22b9b55b40",
+  "displayName": "getGeolocation",
+  "toolType": "CUSTOMIZED_TOOL",
+  "functionSpec": {
+    "outputSchema": {
+      "properties": {
+        "ISO3166-2-lvl4": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "country_code": {
+          "type": "string"
+        },
+        "county": {
+          "type": "string"
+        },
+        "postcode": {
+          "type": "string"
+        },
+        "road": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  }
+}

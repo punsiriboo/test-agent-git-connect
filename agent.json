@@ -1,0 +1,18 @@
+{
+  "displayName": "Airline Support",
+  "defaultLanguageCode": "en",
+  "timeZone": "America/Los_Angeles",
+  "enableLogging": true,
+  "projectNumber": 49589660160,
+  "enableStackdriverLogging": true,
+  "advancedSettings": {
+    "loggingSettings": {
+      "enableStackdriverLogging": true,
+      "enableInteractionLogging": true
+    }
+  },
+  "startPlaybook": "Flight Search",
+  "webClientSettings": {
+    "boxBorderRadius": "0"
+  }
+}

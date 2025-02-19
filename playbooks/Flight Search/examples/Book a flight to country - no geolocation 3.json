@@ -1,0 +1,109 @@
+{
+  "name": "1ad1feab-501e-4f62-be63-72e356bb6f28",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Hi"
+    }
+  }, {
+    "toolUse": {
+      "tool": "getGeolocation",
+      "action": "getGeolocation",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+        "functionParameter": {
+          "currentDate": "9/24/2024"
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Hi there, welcome to the Cymbal Air helpdesk! I can help you find a flight to anywhere in the world. Where would you like to go?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "I want to fly to the UK in a week's time"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Which city in the UK would you like to fly to?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Where can I go"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "We fly to many cities in the UK, including London, Manchester, and Edinburgh. Which city would you like to fly to?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "What can I do in Manchester"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Manchester offers a vibrant mix of culture, entertainment, and outdoor activities. Must-see attractions include the Manchester Art Gallery, the People's History Museum, Old Trafford Stadium, and the Bridgewater Canal. Are you interested in flying to Manchester?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Sure"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Which city are you departing from?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "asuncion"
+    }
+  }, {
+    "toolUse": {
+      "tool": "getFlights",
+      "action": "getFlights",
+      "inputActionParameters": {
+        "functionParameter": {
+          "destination_airport_code": "MAN",
+          "destination_city_name": "Manchester",
+          "flight_duration_minutes": 600,
+          "origin_airport_code": "ASU",
+          "origin_city_name": "Asuncion",
+          "timezone_difference_minutes": -180,
+          "travel_date": "2024-10-01"
+        }
+      },
+      "outputActionParameters": {
+        "functionParameter": {
+          "flights": [ "Flight CY340 leaves ASU at 20:00, arrives to MAN at 03:00 current day + 1 with 0 stops costing 550 dollars. ", "Flight CY797 leaves ASU at 14:32, arrives to MAN at 21:32 current day + 0 with 0 stops costing 602 dollars. ", "Flight CY425 leaves ASU at 15:17, arrives to MAN at 22:17 current day + 0 with 0 stops costing 1258 dollars. ", "Flight CY711 leaves ASU at 15:17, arrives to MAN at 22:17 current day + 0 with 0 stops costing 800 dollars. ", "Flight CY172 leaves ASU at 13:57, arrives to MAN at 01:15 current day + 1 with 2 stops costing 272 dollars. This is the cheapest option!" ]
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Which of these flights would you like to book? Your cheapest option is a flight that leaves ASU at 1:57 pm in the afternoon on October 1st, arrives in MAN at 1:15 am in the morning the following day, and costs $272."
+    }
+  }, {
+    "userUtterance": {
+      "text": "The fourth flight looks good"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Excellent, your flight has been booked. Your flight departs from ASU at 3:17 PM and arrives in MAN at 10:17 PM the same day. Your booking number is 9H18FG, you will receive an email with more details shortly. Is there anything else I can help you with?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "I think I'm good, thanks!"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Glad I could help!"
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "The user is satisfied."
+  },
+  "displayName": "Book a flight to country - no geolocation 3",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}
